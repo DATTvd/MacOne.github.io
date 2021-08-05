@@ -201,27 +201,29 @@ header{
 
 .carousel{
     width: 80%;
-    display: flex;
     align-items: center;
     position: relative;
 }
 
-.carousel-inner{
-    display: flex;
+.carousel-track-container{
+    width: 100%;
     min-height: 352px;
-    overflow: hidden;
 }
 
-.carousel-inner div a{
-    display: block;
-    height: 352px;
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-.carousel-inner img{
-    height: 100%;
+.carousel-track img{
+    width: 100%;
+    display: inline-block;
+    min-height: 352px;
     object-fit: cover;
-}
 
+}
 
 .carousel-indicators{
     width: 100%;
@@ -267,7 +269,7 @@ header{
     background-size: 20px 20px;
     background-position: center;
     float: left;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .carousel-control-next{
@@ -284,23 +286,20 @@ header{
     visibility: hidden;
 }
 
-.carousel-control-prev:hover{
-    background-color: rgba(255,255,255,0.9);
-}
 
-.carousel-control-next:hover{
+.carousel-control-prev:hover, .carousel-control-next:hover{
     background-color: rgba(255,255,255,0.9);
 }
 
 .carousel:hover  .carousel-control-prev{
     visibility: initial;
-    margin-left: 30px;
+    transform: translate(30px);
     transition: 0.3s ease-in;
 }
 
 .carousel:hover  .carousel-control-next{
     visibility: initial;
-    margin-right: 30px;
+    transform: translate(-30px);
     transition: 0.3s ease-in;
 }
 
