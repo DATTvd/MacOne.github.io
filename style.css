@@ -212,7 +212,7 @@ header{
 }
 
 .carousel-track{
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in;
 }
 
 .carousel-slide{
@@ -250,7 +250,7 @@ header{
     list-style-type: none;
 }
 
-.carousel-indicator:hover{
+.carousel-indicator.active, .carousel-indicator:hover{
     background: #f60;
     opacity: 1;
 }
