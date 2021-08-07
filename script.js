@@ -126,6 +126,21 @@ dotsNav.addEventListener("click", e => {
   }
 });
 
+$(function(){
+    $('.autoplay').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerPadding: '10px',
+        dots: false,
+        swipe: true,
+        prevArrow: '.carousel-control-prev',
+        nextArrow: '.carousel-control-next',
+      });   
+});
+
+
 
 
 
