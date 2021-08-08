@@ -91,6 +91,9 @@ header{
     background-color: rgba(0,0,0,0.8);
     padding-top: 5px;
     padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .logo {
@@ -625,7 +628,13 @@ div#new-product > span{
     line-height: 20px;
 }
 
-.care a,span{
+.care a{
+    color: #7ac142;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.care span{
     color: #7ac142;
     font-size: 14px;
     font-weight: 600;
