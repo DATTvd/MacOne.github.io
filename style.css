@@ -1,5 +1,5 @@
 *{
-    padding: 0px 0px 1px 0px;
+    padding: 0px;
     margin: 0px;
     text-decoration: none;
     outline: none;
@@ -689,8 +689,9 @@ div#new-product > span{
 }
 
 #footer-bottom p a{
-    color: #7ac142;
+    color: rgb(43, 143, 219);
 }
+
 
 
 
