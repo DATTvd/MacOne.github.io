@@ -586,6 +586,10 @@ div#new-product > span{
     background-color: rgb(255,150,0);
 }
 
+footer{
+    position: relative;
+}
+
 .strengths{
     display: flex;
     align-items: center;
