@@ -860,10 +860,6 @@ footer{
         padding-right: 8px;
     }
 
-    .item-inner{
-        min-height: initial;
-    }
-
     .info-item h3{
         font-size: 13px;
     }
@@ -904,6 +900,10 @@ footer{
 
     .item-product{
         width: 33%;
+    }
+
+    #item-product-ofset{
+        display: block;
     }
 
     .info-item-product h3{
@@ -969,7 +969,7 @@ footer{
     }
 
     #item-product-ofset{
-        display: inline-block;
+        display: none;
     }
 
     footer > div:first-child{
