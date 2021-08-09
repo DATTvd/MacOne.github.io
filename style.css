@@ -531,6 +531,10 @@ div#new > span{
     margin-bottom: 12px;
 }
 
+#item-product-ofset{
+    display: none;
+}
+
 .all-item-product .item-product .item-inner-product a img{
     display: block;
     max-width: 100%;
@@ -710,7 +714,7 @@ footer{
     font-size: 11px;
     border-right: 1px solid #fff;
     font-weight: lighter;
-    padding: 0px 5px;
+    padding-right: 5px;
 }
 
 #footer-two-left #tag a:hover{
@@ -763,7 +767,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
     .menu ul li a {
       font-size: 12px;
       font-weight: 500;
@@ -790,9 +794,14 @@ footer{
         display: block;
         font-size: 12px;
     }
+
+    .facebook iframe{
+        max-width: 100%;
+    }
+
   }
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 992px) {
 
     .info h1{
         display: none;
@@ -851,6 +860,82 @@ footer{
         padding-right: 8px;
     }
 
+    .item-inner{
+        min-height: initial;
+    }
+
+    .info-item h3{
+        font-size: 13px;
+    }
+
+    .info-item p{
+        font-size: 12px;
+    }
+
+    .label span{
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .list-product .name-product {
+        font-size: 12px;
+    }
+
+    .kind-of-product{
+        padding: 0px;
+    }
+
+    .kind-of-product ul{
+        padding: 8px 2px;
+    }
+
+    .kind-of-product ul li{
+        padding: 5px;
+        border-color: rgb(139, 196, 87);
+    }
+
+    .kind-of-product ul li a{
+        font-size: 12px;
+    }
+
+    .view-all-product a {
+        font-size: 13px;
+    }
+
+    .item-product{
+        width: 33%;
+    }
+
+    .info-item-product h3{
+        font-size: 12px;
+    }
+
+    .info-item-product p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .label-product span{
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .price-product{
+        font-size: 14px;
+    }
+
+    .price-product span{
+        font-size: 11px;
+    }
+
+    #footer-bottom p {
+        font-size: 12px;
+    }
+
+    footer > div:first-child{
+        display: none;
+    }
+
   }
 
   @media only screen and (max-width: 769px) {
@@ -881,6 +966,10 @@ footer{
 
     .item-product{
        min-width: 49%;
+    }
+
+    #item-product-ofset{
+        display: inline-block;
     }
 
     footer > div:first-child{
