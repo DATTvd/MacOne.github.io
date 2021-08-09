@@ -1022,8 +1022,21 @@ footer{
 
 }
 
+@media only screen and (max-width: 576px){
 
+    .chinh-sach{
+        width: 50%;
+    }
 
+    .ho-tro{
+        width: 50%;
+    }
+
+    .item-product{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 
 
