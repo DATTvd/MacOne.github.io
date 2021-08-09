@@ -631,6 +631,10 @@ footer{
     margin-top: 5px;
 }
 
+.customer{
+    background-color: rgb(34,34,34);
+}
+
 .care{
     color: white;
 }
@@ -675,6 +679,10 @@ footer{
 
 .menu-footer li a:hover{
     color: #ffffff;
+}
+
+.copyRight{
+    background-color: rgb(27, 26, 26);
 }
 
 #footer-two{
@@ -841,26 +849,61 @@ footer{
 
   }
 
-  @media only screen and (max-width: 700px){
-      #tOp{
-          display: none;
-      }
+  @media only screen and (max-width: 800px) {
+    #tOp{
+        display: none;
+    }
 
-      .list-mac{
-          width: 100%;
-          display: none;
-      }
+    .header-inner-inner{
+        position: unset;
+    }
 
-      .carousel{
-          max-width: 100%;
-      }
+    .list-mac{
+        width: 100%;
+        display: none;
+    }
 
-      .item{
-          min-width: 50%;
-      }
+    .carousel{
+        width: 100%;
+    }
 
-          
+    .item{
+        min-width: 50%;
+    }
+
+    .item-product{
+       min-width: 48%;
+    }
+
+    footer > div:first-child{
+        display: none;
+    }
+
+    .customer, .copyRight{
+        background-color: #f5f5f5;
+    }
+
+    .title-footer{
+        color: #1d1d1f;
+    }
+
+    .care p{
+        color: #616161;
+    }
+
+    .menu-footer li a{
+        color: #616161;
+    }
+
+    .youtube, .facebook, .bo-cong-thuong{
+        display: none;
+    }
+
+    #footer-two-left .cs{
+        color: #616161;
+    }
   }
+
 
 
 
