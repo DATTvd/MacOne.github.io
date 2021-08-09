@@ -105,6 +105,11 @@ header{
     z-index: 3;
 }
 
+.header-inner-inner{
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     max-width: 100%;
     padding-bottom: 5px ;
@@ -648,6 +653,7 @@ footer{
 }
 
 .care span{
+    display: block;
     color: #7ac142;
     font-size: 14px;
     font-weight: 600;
@@ -741,6 +747,95 @@ footer{
 }
 
 
+@media only screen and (max-width: 1199px) {
+    .menu ul li a {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .icon-strengths img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-strengths h3{
+        font-size: 12px;
+    }
+
+    .about-strengths p{
+        font-size: 11px;
+    }
+
+    .care a{
+        font-size: 12px;
+    }
+
+    .care span{
+        display: block;
+        font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .info h1{
+        display: none;
+    }
+
+    .hotline{
+        margin: 0px;
+    }
+
+    .shopping img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .shopping p{
+        font-size: 12px;
+        padding: 0px 5px;
+        margin: 0px;
+    }
+
+    .shopping span{
+        margin: 0px;
+        width: 16px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .logo{
+        padding: 0px;
+    }
+
+    .menu ul li a{
+        font-size: 10px;
+    }
+
+    .search input[type='text']{
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+
+    .search input[type="submit"]{
+        top: 1px;
+        height: 20px;
+        background-size: 15px 15px;
+    }
+
+    .list-mac ul li a{
+        font-size: 11px;
+        padding: 15px 20px;
+    }
+
+    .list-mac ul li a img{
+        width: 22px;
+        top: 15px;
+        padding-right: 8px;
+    }
+
+  }
 
 
 
