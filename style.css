@@ -139,7 +139,11 @@ header{
     color: white;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.menu ul li a:hover{
+    color: rgb(124,185,66);
 }
 
 .search{
@@ -835,6 +839,27 @@ footer{
         padding-right: 8px;
     }
 
+  }
+
+  @media only screen and (max-width: 800px){
+      #tOp{
+          display: none;
+      }
+
+      .list-mac{
+          width: 100%;
+          display: none;
+      }
+
+      .carousel{
+          max-width: 100%;
+      }
+
+      .item{
+          min-width: 50%;
+      }
+
+          
   }
 
 
