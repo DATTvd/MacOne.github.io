@@ -1052,7 +1052,7 @@ footer{
     }
 
     .customer-container{
-        padding-bottom: 5px;
+        padding: 5px;
     }
 
     #footer-two-right img{
@@ -1106,12 +1106,10 @@ footer{
     .header-inner{
         position: unset;
     }
-
-    .customer{
-        padding-right: 0px;
+    
+    .customer-container{
+        padding-top: 5px;
     }
-
-
 }
 
 
