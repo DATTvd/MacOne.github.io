@@ -938,6 +938,12 @@ footer{
   }
 
   @media only screen and (max-width: 769px) {
+
+    .container{
+        padding: 0px;
+        margin: 0px auto;
+    }
+
     #tOp{
         display: none;
     }
@@ -947,12 +953,19 @@ footer{
     }
 
     .list-mac{
-        width: 100%;
         display: none;
     }
 
     .carousel{
         width: 100%;
+    }
+
+    .carousel-track-container{
+        min-height: 265px;
+    }
+
+    .carousel-track img{
+        min-height: 265px;
     }
 
     .item{
@@ -1042,16 +1055,24 @@ footer{
         max-width: 100%;
     }
 
+    .container{
+        padding: 0px;
+    }
+
     .menu{
         display: none;
     }
 
-    /* .carousel{
-        min-height: unset;
-        height: 100%;
+    .carousel-track-container{
+        min-height: 130px;
     }
 
-    .carousel-track-container{
+    .carousel-track img{
+        min-height: 130px;
+    }
+
+
+    /* .carousel-track-container{
         min-height: unset;
         height: 100%;
     }
