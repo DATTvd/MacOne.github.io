@@ -1087,7 +1087,11 @@ footer{
     
     .header-inner{
         position: unset;
-    };
+    }
+
+    .customer{
+        padding-right: 0px;
+    }
 
 
 }
