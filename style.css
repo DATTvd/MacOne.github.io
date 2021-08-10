@@ -952,10 +952,6 @@ footer{
         position: unset;
     }
 
-    .search input[type="submit"]{
-        top: 3px;
-    }
-
     .full-main{
         padding-top: 0px;
         background-color: #fff;
@@ -1089,6 +1085,11 @@ footer{
     .logo{
         width: 110px;
         padding: 5px 0px;
+    }
+
+    .search input[type="submit"]{
+        top: 2px;
+        background-size: 13px 13px;
     }
 
     .menu{
