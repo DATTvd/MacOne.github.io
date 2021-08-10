@@ -249,7 +249,6 @@ header{
     display: inline-block;
     min-height: 352px;
     object-fit: cover;
-
 }
 
 .carousel-nav{
@@ -968,6 +967,14 @@ footer{
        min-width: 49%;
     }
 
+    .item-inner{
+        min-height: 300px;
+    }
+
+    .price{
+        bottom: 5px;
+    }
+
     #item-product-ofset{
         display: none;
     }
@@ -1012,17 +1019,9 @@ footer{
         padding-bottom: 5px;
     }
 
-    .res{
-        margin-top: 10px;
-    }
-
     #footer-two-right img{
         padding: 5px 0px 0px 0px;
     }
-
-}
-
-@media only screen and (max-width: 576px){
 
     .chinh-sach{
         width: 50%;
@@ -1037,6 +1036,45 @@ footer{
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 600px){
+    *{
+        max-width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    /* .carousel{
+        min-height: unset;
+        height: 100%;
+    }
+
+    .carousel-track-container{
+        min-height: unset;
+        height: 100%;
+    }
+
+    .carousel-track img{
+        min-height: unset;
+    } */
+
+    #ban-chay{
+        display: none;
+    }
+    
+    .header-inner{
+        position: unset;
+    };
+
+
+}
+
+
+
+
+
 
 
 
