@@ -952,7 +952,7 @@ footer{
         position: unset;
     }
 
-    input[type="submit"]{
+    .search input[type="submit"]{
         height: 21px;
     }
 
