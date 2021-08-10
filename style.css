@@ -953,7 +953,7 @@ footer{
     }
 
     input[type="submit"]{
-        height: 100%;
+        height: 21px;
     }
 
     .full-main{
