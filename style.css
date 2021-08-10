@@ -1088,8 +1088,7 @@ footer{
     }
 
     .search input[type="submit"]{
-        top: 2px;
-        background-size: 13px 13px;
+        height: 22px;
     }
 
     .menu{
