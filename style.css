@@ -944,6 +944,19 @@ footer{
       .all-item-product{
           margin-left: 0px;
       }
+
+      .item{
+          min-width: 33.33%;
+          text-align: center;
+      }
+
+      .item-inner{
+          min-height: 280px;
+      }
+
+      .price{
+          width: 30%;
+      }
   }
 
   @media only screen and (max-width: 767px) {
@@ -1031,9 +1044,7 @@ footer{
     }
 
     .item{
-        min-width: 50%;
-        display: flex;
-        justify-content: center;
+        min-width: 33.33%;
         text-align: center;
     }
 
@@ -1149,6 +1160,11 @@ footer{
     
     .customer-container{
         padding-top: 5px;
+    }
+
+    .item{
+        min-width: 50%;
+        text-align: center;
     }
 
     .item-inner{

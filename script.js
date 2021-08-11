@@ -168,4 +168,9 @@ setInterval(() => {
 // });
 //End toggle list-item-product
 
-
+console.log(screen.width);
+function checkWidth(){
+    if(screen.width < 768){
+        aleart('nho hon 768')
+    }    
+}
