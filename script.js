@@ -155,6 +155,7 @@ setInterval(() => {
 //         nextArrow: '.carousel-control-next',
 //       });   
 // });
+
 // End auto play slide item hot
 
 
@@ -168,9 +169,15 @@ setInterval(() => {
 // });
 //End toggle list-item-product
 
-console.log(screen.width);
-function checkWidth(){
-    if(screen.width < 768){
-        aleart('nho hon 768')
-    }    
+
+var widthContainer = document.querySelectorAll('.continer-fluid')
+function checkA(){
+    if(screen.width > 1000){
+        console.log('fff')
+    }
+    else{
+        alert('B')
+    }
 }
+
+checkA();
