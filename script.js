@@ -142,31 +142,30 @@ setInterval(() => {
 // End auto play slide herder-inner
 
 // Start auto play slide item hot
-$(function(){
-    $('.autoplay').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerPadding: '10px',
-        dots: false,
-        swipe: true,
-        prevArrow: '.carousel-control-prev',
-        nextArrow: '.carousel-control-next',
-      });   
-});
+// $(function(){
+//     $('.autoplay').slick({
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         centerPadding: '10px',
+//         dots: false,
+//         swipe: true,
+//         prevArrow: '.carousel-control-prev',
+//         nextArrow: '.carousel-control-next',
+//       });   
+// });
 // End auto play slide item hot
 
 
 //Start toggle list-item-product
-const nameProduct = document.getElementById('name-product-1');
-const kindOfProduct = document.getElementById('kind-of-product-1');
+// const nameProduct = document.getElementById('name-product-1');
+// const kindOfProduct = document.getElementById('kind-of-product-1');
 
-console.log(kindOfProduct);
-nameProduct.addEventListener('click', e =>{
-    console.log('id1');
-    kindOfProduct.style.height = '100%';
-});
+// nameProduct.addEventListener('click', e =>{
+//     console.log('id1');
+//     kindOfProduct.style.height = '100%';
+// });
 //End toggle list-item-product
 
 
