@@ -141,7 +141,7 @@ setInterval(() => {
 
 // End auto play slide herder-inner
 
-//Start auto play slide item hot
+// Start auto play slide item hot
 $(function(){
     $('.autoplay').slick({
         slidesToShow: 4,
@@ -155,7 +155,7 @@ $(function(){
         nextArrow: '.carousel-control-next',
       });   
 });
-//End auto play slide item hot
+// End auto play slide item hot
 
 
 //Start toggle list-item-product
