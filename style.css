@@ -235,7 +235,7 @@ header{
 }
 
 .carousel-track{
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-out;
 }
 
 .carousel-slide{
@@ -766,7 +766,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1119px) {
     .menu ul li a {
       font-size: 12px;
       font-weight: 500;
@@ -800,7 +800,7 @@ footer{
 
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
 
     .info h1{
         display: none;
@@ -857,6 +857,10 @@ footer{
         width: 22px;
         top: 15px;
         padding-right: 8px;
+    }
+
+    .item-inner{
+        min-height: 280px;
     }
 
     .info-item h3{
@@ -934,10 +938,15 @@ footer{
     footer > div:first-child{
         display: none;
     }
-
   }
 
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 991px) {
+      .all-item-product{
+          margin-left: 0px;
+      }
+  }
+
+  @media only screen and (max-width: 767px) {
 
     .container{
         padding: 0px;
@@ -950,6 +959,24 @@ footer{
 
     .header-inner-inner{
         position: unset;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .header-inner{
+        padding: 0px 5px;
+        position: unset;
+    }
+
+    .logo{
+        width: 110px;
+        padding: 5px 0px;
+    }
+
+    .search input[type="submit"]{
+        height: 22px;
     }
 
     .full-main{
@@ -982,6 +1009,10 @@ footer{
         width: 100%;
     }
 
+    .carousel-wrap{
+        padding: 0px;
+    }
+
     .carousel-track-container{
         min-height: 265px;
     }
@@ -990,11 +1021,24 @@ footer{
         min-height: 265px;
     }
 
+    .wrap-product{
+        padding-bottom: 0px;
+    }
+
+    .kind-of-product{
+        height: 0;
+        transition: height 1s ease-in;
+    }
+
     .item{
         min-width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .all-item-product{
+        margin-top: 0px;
         margin-left: 0px;
     }
 
@@ -1008,6 +1052,7 @@ footer{
     }
 
     .price{
+        width: 50%;
         bottom: 5px;
     }
 
@@ -1033,6 +1078,14 @@ footer{
 
     .care p{
         color: #616161;
+    }
+
+    .care a{
+        color: #f83015;
+    }
+
+    .care span{
+        color: #f83015;
     }
 
     .menu-footer li a{
@@ -1067,6 +1120,10 @@ footer{
         width: 50%;
     }
 
+    #footer-two-left #tag a{
+        color: #7ac142;
+    }
+
     .item-product{
         display: flex;
         justify-content: center;
@@ -1078,23 +1135,6 @@ footer{
         max-width: 100%;
     }
 
-    .header-inner{
-        padding: 0px 5px;
-    }
-
-    .logo{
-        width: 110px;
-        padding: 5px 0px;
-    }
-
-    .search input[type="submit"]{
-        height: 22px;
-    }
-
-    .menu{
-        display: none;
-    }
-
     .carousel-track-container{
         min-height: 140px;
     }
@@ -1102,17 +1142,13 @@ footer{
     .carousel-track img{
         min-height: 140px;
     }
-
-    #ban-chay{
-        display: none;
-    }
-    
-    .header-inner{
-        position: unset;
-    }
     
     .customer-container{
         padding-top: 5px;
+    }
+
+    .item-inner{
+        min-height: 280px;
     }
 
     .chinh-sach, .ho-tro{

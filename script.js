@@ -6,7 +6,6 @@ const dotsNav = document.querySelector('.carousel-nav');
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-
 //Set width for slide
 const setSlidePotision = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
@@ -69,7 +68,6 @@ for(i=0; i<slides.length; i++){
   arrWidth.push(slideWidthArr)
 }
 
-
 dotsNav.addEventListener("click", e => {
     if (e.target.nodeName === "BUTTON") {
     dots.forEach(item => item.classList.remove("active"));
@@ -81,51 +79,69 @@ dotsNav.addEventListener("click", e => {
     } else if (e.target.classList.contains("second")) {
         track.style.transform = 'translateX(-' + arrWidth[1] + ')';
         e.target.classList.add("active");
-        // prevSlideB = slides[0]
-        // targetSlideB = slides[1];
-        // prevSlideB.classList.remove('current-slide')
-        // targetSlideB.classList.add('.current-slide')
-        // console.log(targetSlideB);
 
     } else if (e.target.classList.contains('third')){
         track.style.transform = 'translateX(-' + arrWidth[2] + ')';
         e.target.classList.add('active');
-        // prevSlideB = slides[1]
-        // targetSlideB = slides[2];
-        // prevSlideB.classList.remove('current-slide')
-        // targetSlideB.classList.add('.current-slide')
-        // console.log(targetSlideB);
     }
     else if (e.target.classList.contains('fourth')){
         track.style.transform = 'translateX(-' + arrWidth[3] + ')';
         e.target.classList.add('active');
-        // prevSlideB = slides[2]
-        // targetSlideB = slides[3];
-        // prevSlideB.classList.remove('current-slide')
-        // targetSlideB.classList.add('.current-slide')
-        // console.log(targetSlideB);
     } 
     else if (e.target.classList.contains('fifth')){
         track.style.transform = 'translateX(-' + arrWidth[4] + ')';
         e.target.classList.add('active');
-        // prevSlideB = slides[3]
-        // targetSlideB = slides[4];
-        // prevSlideB.classList.remove('current-slide')
-        // targetSlideB.classList.add('.current-slide')
-        // console.log(targetSlideB);
     }
     else if (e.target.classList.contains('sixth')){
         track.style.transform = 'translateX(-' + arrWidth[5] + ')';
         e.target.classList.add('active');
-        // prevSlideB = slides[4]
-        // targetSlideB = slides[5];
-        // prevSlideB.classList.remove('current-slide')
-        // targetSlideB.classList.add('.current-slide')
-        // console.log(targetSlideB);
     }
   }
 });
 
+
+// Start auto play slide herder-inner
+
+function autoRunSlide1(){
+    track.style.transform = 'translateX(-' + arrWidth[0] + ')';
+}
+function autoRunSlide2(){
+    track.style.transform = 'translateX(-' + arrWidth[1] + ')';
+}
+function autoRunSlide3(){
+    track.style.transform = 'translateX(-' + arrWidth[2] + ')';
+}
+function autoRunSlide4(){
+    track.style.transform = 'translateX(-' + arrWidth[3] + ')';
+}
+function autoRunSlide5(){
+    track.style.transform = 'translateX(-' + arrWidth[4] + ')';
+}
+function autoRunSlide6(){
+    track.style.transform = 'translateX(-' + arrWidth[5] + ')';
+}
+
+setInterval(() => {
+    setTimeout(() => {
+        autoRunSlide2();
+    }, 3000);
+    setTimeout(() => {
+        autoRunSlide3();
+    }, 6000);
+    setTimeout(() => {
+        autoRunSlide4();
+    }, 9000);
+    setTimeout(() => {
+        autoRunSlide5();
+    }, 12000);
+    setTimeout(() => {
+        autoRunSlide6();
+    },15000); 
+}, 15000);
+
+// End auto play slide herder-inner
+
+//Start auto play slide item hot
 // $(function(){
 //     $('.autoplay').slick({
 //         slidesToShow: 4,
@@ -139,11 +155,18 @@ dotsNav.addEventListener("click", e => {
 //         nextArrow: '.carousel-control-next',
 //       });   
 // });
+//End auto play slide item hot
 
 
+//Start toggle list-item-product
+const nameProduct = document.getElementById('name-product-1');
+const kindOfProduct = document.getElementById('kind-of-product-1');
 
-
-
-
+console.log(kindOfProduct);
+nameProduct.addEventListener('click', e =>{
+    console.log('id1');
+    kindOfProduct.style.height = '100%';
+});
+//End toggle list-item-product
 
 
