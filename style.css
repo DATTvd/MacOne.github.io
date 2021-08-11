@@ -1142,6 +1142,10 @@ footer{
     .carousel-track img{
         min-height: 140px;
     }
+
+    .carousel-main{
+        margin-top: 10px;
+    }
     
     .customer-container{
         padding-top: 5px;
