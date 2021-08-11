@@ -142,19 +142,19 @@ setInterval(() => {
 // End auto play slide herder-inner
 
 //Start auto play slide item hot
-// $(function(){
-//     $('.autoplay').slick({
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//         centerPadding: '10px',
-//         dots: false,
-//         swipe: true,
-//         prevArrow: '.carousel-control-prev',
-//         nextArrow: '.carousel-control-next',
-//       });   
-// });
+$(function(){
+    $('.autoplay').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerPadding: '10px',
+        dots: false,
+        swipe: true,
+        prevArrow: '.carousel-control-prev',
+        nextArrow: '.carousel-control-next',
+      });   
+});
 //End auto play slide item hot
 
 
