@@ -6,7 +6,7 @@
         rewind: true,
         perPage: 1,
         perMove: 1,
-        autoplay: false,
+        autoplay: true,
         interval: 4000,
         drag: true,   
         pagination: true
@@ -19,7 +19,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
         perPage: 4,
         perMove: 1,
         pagination: false,
-        autoplay: false,
+        autoplay: true,
         interval: 3000,
         breakpoints: {
 		992: {
