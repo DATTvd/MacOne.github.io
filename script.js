@@ -21,7 +21,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
         pagination: false,
         autoplay: false,
         interval: 3000,
-        gap: 10,
         breakpoints: {
 		992: {
 			perPage: 3,
