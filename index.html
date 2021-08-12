@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./assets/macone-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="./splide/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
     <title>MacOne - Hệ thống cửa hàng bán lẻ Macbook uy tín</title>
 </head>
@@ -70,7 +70,7 @@
         <section class="container-fluid nav">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-md-2 h-100 list-mac">
+                    <div class="col-md-2 list-mac">
                         <div class="card">
                             <ul>
                                 <li><a href="#"><img src="./assets/icon-macbook-air.png" alt="">Macbook air</a></li>
@@ -88,49 +88,38 @@
                             </ul>
                         </div>
                     </div>
-                    <!--Bat dau carousel -->
+                    <!--Bat dau carousel -->                  
                     <div class="col-md-10 carousel">
-                        
-                        <div class="carousel-control">
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            </a>                                
-                        </div> 
-                        
-                                                      
-                        <div class="carousel-track-container"> 
-                            <div class="carousel-track">
-                                <a id="0" href="" class="carousel-slide current-slide first">
-                                    <img src="./assets/slide-1.jpg">
-                                </a>
-                                <a id="1" href="" class="carousel-slide second">
-                                    <img src="./assets/slide-2.jpg">
-                                </a>
-                                <a id="2" href="" class="carousel-slide third">
-                                    <img src="./assets/slide-3.jpg">
-                                </a>
-                                <a id="3" href="" class="carousel-slide fourth">
-                                    <img src="./assets/slide-4.jpg">
-                                </a>
-                                <a id="4" href="" class="carousel-slide fifth">
-                                    <img src="./assets/slide-5.jpg">
-                                </a>
-                                <a id="5" href="" class="carousel-slide sixth">
-                                    <img src="./assets/slide-6.jpg">
-                                </a>
+                        <div id="image-slider" class="splide">
+                            <div class="splide__arrows">
+                                <button class="splide__arrow splide__arrow--prev carousel-control-prev">
+                                </button>
+                                <button class="splide__arrow splide__arrow--next carousel-control-next">
+                                </button>
                             </div>
-                        </div> 
-                     
-                        <div class="carousel-nav">
-                            <button class="carousel-indicator current-dot active first"></button>
-                            <button class="carousel-indicator second"></button>
-                            <button class="carousel-indicator third"></button>
-                            <button class="carousel-indicator fourth"></button>
-                            <button class="carousel-indicator fifth"></button>
-                            <button class="carousel-indicator sixth"></button>
-                        </div>  
-                         
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><img src="./assets/slide-6.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Het carousel -->
                 </div>
@@ -140,217 +129,271 @@
         </section>
         <section id="ban-chay">
             <div class="container">
-                <div class="row g-0 carousel-main">
+                <div class="row carousel-main">
                     <h2>Sản phẩm bán chạy</h2>
-                    <div class="carousel-wrap autoplay">
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="new" class="label">
-                                    <span>Mới về</span>
+                    <div id="splide1" class="splide">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev carousel-control-prev-slide-item">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next carousel-control-next-slide-item">
+                            </button>
+                        </div>                      
+                        <div class="splide__track">
+                            <div class="splide__list">                               
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="new" class="label">
+                                                <span>Mới về</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-1.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Pro 2020 13 inch (MYD82/MYDA2)</h3>
+                                                <p>Apple M1 8GB RAM 256GB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>30.990.000 ₫<p>
+                                            </div>
+                                        </div>                           
+                                    </div>
                                 </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-1.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Pro 2020 13 inch (MYD82/MYDA2)</h3>
-                                    <p>Apple M1 8GB RAM 256GB SSD - NEW</p>
+                                <div class="splide__slide">
+                                    <div class="item">  
+                                        <div class="item-inner">
+                                            <div id="new" class="label">
+                                                <span>Mới Về</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>Ipad Pro 11 inch 2021</h3>
+                                                <p>Apple M1 128 - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>20.990.000 ₫</p>
+                                            </div>
+                                        </div>                    
+                                    </div> 
                                 </div>
-                                <div class="price">
-                                    <p>30.990.000 ₫<p>
+                                <div class="splide__slide">
+                                    <div class="item">                          
+                                        <div class="item-inner">
+                                            <div id="bestSale" class="label">
+                                                <span>Bán Chạy</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-3.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Air 2020 13 inch</h3>
+                                                <p>Apple M1 8GB RAM 256GB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>25.490.000 ₫</p>
+                                            </div>
+                                        </div>                           
+                                    </div> 
                                 </div>
-                            </div>                           
-                        </div>
-                        <div class="item">  
-                            <div class="item-inner">
-                                <div id="new" class="label">
-                                    <span>Mới Về</span>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="hot" class="label">
+                                                <span>Hot</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-1.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Pro 2020 13 inch (MYD92/MYDC2)</h3>
+                                                <p>Apple M1 8GB RAM 512GB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>35.590.000 ₫</p>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-2.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>Ipad Pro 11 inch 2021</h3>
-                                    <p>Apple M1 128 - NEW</p>
+                                <div class="splide__slide">
+                                    <div class="item">                            
+                                        <div class="item-inner">
+                                            <div id="hot" class="label">
+                                                <span>Hot</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-4.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>iMac 2021 24 inch Retina 4.5K</h3>
+                                                <p>Apple M1 16GB RAM 7-Core GPU - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>37.890.000 ₫</p>
+                                            </div>
+                                        </div>                           
+                                    </div>
                                 </div>
-                                <div class="price">
-                                    <p>20.990.000 ₫</p>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="betSale" class="label">
+                                                <span>Bán Chạy</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>iMac 2020 21.5 inch Full HD MHK03</h3>
+                                                <p>Core i5 2.3GHz 8GB RAM 256GB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>26.890.000 ₫</p>
+                                            </div>
+                                        </div>                
+                                    </div> 
                                 </div>
-                            </div>                    
-                        </div>
-                        <div class="item">                          
-                            <div class="item-inner">
-                                <div id="bestSale" class="label">
-                                    <span>Bán Chạy</span>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="hot" class="label">
+                                                <span>Hot</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>iMac 2020 27 inch Retina 5K MXWT2</h3>
+                                                <p>Core i5 3.1GHz 8GB RAM 256GB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>42.990.000 ₫</p>
+                                            </div>
+                                        </div>                          
+                                    </div> 
                                 </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-3.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Air 2020 13 inch</h3>
-                                    <p>Apple M1 8GB RAM 256GB SSD - NEW</p>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="bestSale" class="label">
+                                                <span>Bán chạy</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Pro 2019 16 inch (MVVJ2/ MVVL2)</h3>
+                                                <p>Core i7 2.6GHz 16GB RAM 512GB SSD - Like New</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>45.000.000 ₫</p>
+                                            </div>
+                                        </div>                           
+                                    </div>
                                 </div>
-                                <div class="price">
-                                    <p>25.490.000 ₫</p>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="hot" class="label">
+                                                <span>Hot</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-4.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>iMac 2021 24 inch Retina 4.5K</h3>
+                                                <p>Apple M1 16GB RAM 256GB SSD 8-Core GPU - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Giá từ </span> 42.990.000 ₫</p>
+                                            </div>
+                                        </div>                            
+                                    </div> 
                                 </div>
-                            </div>                           
-                        </div> 
-                        <div class="item">                            
-                            <div class="item-inner">
-                                <div id="hot" class="label">
-                                    <span>Hot</span>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="new" class="label">
+                                                <span>Mới về</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-9.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>iPad Air 4 2020 Wifi 64GB</h3>
+                                                <p>Apple A14 128 - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Giá từ </span> 14.990.000 ₫</p>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-4.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>iMac 2021 24 inch Retina 4.5K</h3>
-                                    <p>Apple M1 16GB RAM 7-Core GPU - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p>37.890.000 ₫</p>
-                                </div>
-                            </div>                           
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="betSale" class="label">
-                                    <span>Bán Chạy</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-5.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>iMac 2020 21.5 inch Full HD MHK03</h3>
-                                    <p>Core i5 2.3GHz 8GB RAM 256GB SSD - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p>26.890.000 ₫</p>
-                                </div>
-                            </div>                
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="hot" class="label">
-                                    <span>Hot</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-6.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>iMac 2020 27 inch Retina 5K MXWT2</h3>
-                                    <p>Core i5 3.1GHz 8GB RAM 256GB SSD - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p>42.990.000 ₫</p>
-                                </div>
-                            </div>                          
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="bestSale" class="label">
-                                    <span>Bán chạy</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-7.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Pro 2019 16 inch (MVVJ2/ MVVL2)</h3>
-                                    <p>Core i7 2.6GHz 16GB RAM 512GB SSD - Like New</p>
-                                </div>
-                                <div class="price">
-                                    <p>45.000.000 ₫</p>
-                                </div>
-                            </div>                           
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="hot" class="label">
-                                    <span>Hot</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-4.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>iMac 2021 24 inch Retina 4.5K</h3>
-                                    <p>Apple M1 16GB RAM 256GB SSD 8-Core GPU - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p><span>Giá từ </span> 42.990.000 ₫</p>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="new" class="label">
-                                    <span>Mới về</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-9.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>iPad Air 4 2020 Wifi 64GB</h3>
-                                    <p>Apple A14 128 - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p><span>Giá từ </span> 14.990.000 ₫</p>
-                                </div>
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="new" class="label">
+                                                <span>Mới về</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-3.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Air 2020 13 inch</h3>
+                                                <p>Apple M1 RAM 16GB 256GB/512GB/1TB- NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Giá từ </span> 30.590.000 ₫</p>
+                                            </div>
+                                        </div>                          
+                                    </div> 
+                                </div> 
+                                <div class="splide__slide">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div id="new" class="label">
+                                                <span>Mới Về</span>
+                                            </div>
+                                            <div class="wrap-a">
+                                                <a href="">
+                                                    <img src="./assets/slide-main-7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="info-item">
+                                                <h3>MacBook Pro 2019 16 inch (MVVK2/MVVM2)</h3>
+                                                <p>Core i9 2.3GHz 16GB RAM 1TB SSD - NEW</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>65.490.000 ₫</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                              
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="new" class="label">
-                                    <span>Mới về</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-3.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Air 2020 13 inch</h3>
-                                    <p>Apple M1 RAM 16GB 256GB/512GB/1TB- NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p><span>Giá từ </span> 30.590.000 ₫</p>
-                                </div>
-                            </div>                          
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="hot" class="label">
-                                    <span>Hot</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-1.jpeg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Pro 2020 13 inch (MYD92/MYDC2)</h3>
-                                    <p>Apple M1 8GB RAM 512GB SSD - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p>35.590.000 ₫</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-inner">
-                                <div id="new" class="label">
-                                    <span>Mới Về</span>
-                                </div>
-                                <a href="">
-                                    <img src="./assets/slide-main-7.jpg" alt="">
-                                </a>
-                                <div class="info-item">
-                                    <h3>MacBook Pro 2019 16 inch (MVVK2/MVVM2)</h3>
-                                    <p>Core i9 2.3GHz 16GB RAM 1TB SSD - NEW</p>
-                                </div>
-                                <div class="price">
-                                    <p>65.490.000 ₫</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-control">
-                        <a class="carousel-control-prev" id="pre-main"></a>
-                        <a class="carousel-control-next" id="pre-main"></a>                            
                     </div>
                 </div>
             </div>
@@ -1113,10 +1156,7 @@
     </script>
     <!-- End Messenger Plugin chat Code -->
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>    
-<script type="text/javascript" src="slick/slick.js"></script>
 <script src="./script.js"></script>
-
+<script src="./splide/js/splide.min.js"></script>
 </body>
 </html>
