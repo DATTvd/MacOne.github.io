@@ -7,6 +7,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+  }
+
 .full-main{
     background-color: rgb(240,240,240);
     padding-top: 10px;
