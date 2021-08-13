@@ -13,6 +13,8 @@ html, body {
 
 body {
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
   }
 
 .full-main{
