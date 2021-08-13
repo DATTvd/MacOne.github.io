@@ -458,7 +458,39 @@ div#new > span{
     color: white;
     font-size: 14px;
     background-color: rgb(123,184,66);
-    padding: 10px 15px;
+    padding: 10px 0px 10px 15px;
+}
+
+.name-product{
+    position: relative;
+}
+
+.name-product h3{
+    display: inline;
+}
+
+.icon-name-product{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background: url(./assets/icon-menu.png) center no-repeat;
+    background-size: 18px 18px;
+    background-color: transparent;
+}
+
+.list-product .name-product[open='true'] + .kind-of-product{
+    max-height: 300px;
+}
+
+.list-product .name-product[open='true'] > .icon-name-product{
+    background-color: #000;
+}
+
+.kind-of-product{
+    max-height: 0;
+    transition: max-height 0.5s ease;
 }
 
 .kind-of-product ul{
@@ -885,6 +917,10 @@ footer{
         font-size: 12px;
     }
 
+    .wrap-product{
+        padding: 0px;
+    }
+
     .kind-of-product{
         padding: 0px;
     }
@@ -908,6 +944,7 @@ footer{
 
     .all-item-product{
         margin-left: 0px;
+        margin-top: 0px;
     }
 
     .item-product{
@@ -927,9 +964,14 @@ footer{
         line-height: 15px;
     }
 
+    .label-product{
+        padding-top: 5px;
+    }
+
     .label-product span{
-        font-size: 11px;
-        padding: 5px;
+        font-size: 10px;
+        padding: 4px 8px;
+        border-radius: 4px;
     }
 
     .price-product{
@@ -949,7 +991,7 @@ footer{
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 768px) {
 
     .container{
         padding: 0px;
@@ -965,7 +1007,7 @@ footer{
     }
 
     .menu{
-        display: none;
+        visibility: hidden;
     }
 
     .header-inner{
@@ -1013,15 +1055,6 @@ footer{
 
     .list-mac{
         display: none;
-    }
-
-    .wrap-product{
-        padding-bottom: 0px;
-    }
-
-    .kind-of-product{
-        height: 0;
-        transition: height 1s ease-in;
     }
 
     .carousel-main h2{
@@ -1142,14 +1175,21 @@ footer{
     }
 }
 
+@media screen and ( max-width: 767px){
+    .menu{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 576px){
     *{
         max-width: 100%;
     }
 
     ::-webkit-scrollbar {
-        width: 0;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
+        width: 0;
+        background: transparent; 
     }
 
     .info-item{
