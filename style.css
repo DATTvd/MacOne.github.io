@@ -1147,6 +1147,11 @@ footer{
         max-width: 100%;
     }
 
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+
     .info-item{
         padding: 0px 5px;
     }
