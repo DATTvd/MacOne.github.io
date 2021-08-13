@@ -1158,10 +1158,6 @@ footer{
 
 @media screen and (max-width: 500px){
 
-    .item-product{
-        padding-right: 6px;
-    }
-
     #footer-bottom p{
         font-size: 10px;
     }
