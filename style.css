@@ -1146,6 +1146,10 @@ footer{
     *{
         max-width: 100%;
     }
+
+    .info-item{
+        padding: 0px 5px;
+    }
     
     .customer-container{
         padding-top: 5px;
