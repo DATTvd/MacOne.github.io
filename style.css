@@ -14,7 +14,102 @@ html, body {
 body {
     position: relative;
     box-sizing: border-box;
-  }
+}
+
+#icon-logo-apple{
+    position: fixed;
+    z-index: 1000;
+    top: 320px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#icon-logo-apple[open='true'] + #menu-hide{
+    width: 320px;
+}
+
+#menu-hide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    z-index: 1000;   
+    background-color: #000;
+    transition: width 0.6s ease;
+    opacity: 0.9;
+    overflow: hidden;
+}    
+
+#close{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 0px 0px;
+}
+
+#list-menu-hide{
+    width: 320px;
+    display: block;
+    margin-top: 25px;
+    overflow-x: hidden;
+    padding: 0px 10px;
+}
+
+#list-menu-hide ul li{
+    list-style-type: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 10px 0px;
+    overflow-x: hidden;
+}
+
+#list-menu-hide ul li a{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#info-menu-hide{
+    width: 320px;
+    display: block;
+    padding: 0px 10px;
+    margin-top: 20px;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#info-menu-hide div:first-child a{
+    margin-top: 15px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(124,185,66);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#info-menu-hide div:first-child a:last-child{
+    float: right;
+}
+
+#info-menu-hide div:last-child{
+    margin-top: 20px;
+}
+
+#info-menu-hide div:last-child p{
+    margin-bottom: 10px;
+}
+
+#info-menu-hide div:last-child span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(124,185,66);
+}
 
 .full-main{
     background-color: rgb(240,240,240);
@@ -993,7 +1088,11 @@ footer{
   }
 
   @media only screen and (max-width: 768px) {
-
+    
+    #icon-logo-apple{
+        display: block;
+    }
+    
     .container{
         padding: 0px;
         margin: 0px auto;
@@ -1041,6 +1140,14 @@ footer{
         padding: 0px;
     }
 
+    .carousel-main h2{
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    #splide1{
+        margin-top: 10px;
+    }
+
     .product{
         margin-top: 0px;
     }
@@ -1072,6 +1179,11 @@ footer{
 
     .item-inner{
         min-height: 280px;
+    }
+
+    .label span{
+        font-size: 11px;
+        border-radius: 4px;
     }
 
     .item a img{
@@ -1196,8 +1308,29 @@ footer{
         width: 0;
         background: transparent; 
     }
+    
+    #menu-hide, #list-menu-hide, #info-menu-hide{
+        max-width: 350px;
+    }
+
+    #icon-logo-apple{
+        top: 190px;
+        right: 20px;
+    }
+
+    #info-menu-hide div:first-child a{
+        padding: 10px 5px;
+    }   
+
+    #info-menu-hide div:last-child span{
+        font-size: 11px;
+    } 
 
     .info-item{
+        padding: 0px 5px;
+    }
+
+    .info-item-product{
         padding: 0px 5px;
     }
     

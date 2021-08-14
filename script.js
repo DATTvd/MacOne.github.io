@@ -35,8 +35,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
 const nameProduct = document.querySelectorAll('.name-product');
 const iconNameProduct = document.querySelectorAll('.icon-name-product')
 
-console.log(nameProduct);
-
 nameProduct.forEach( item => {
     item.addEventListener('click', function(event){
         event.preventDefault();
@@ -47,4 +45,32 @@ nameProduct.forEach( item => {
             this.setAttribute('open', true);
         }
     })
+})
+
+const goToTop = document.getElementById('go-to-top');
+goToTop.addEventListener('click', function(event){
+    event.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
+const logoApple = document.getElementById('icon-logo-apple');
+const closeMenuHide = document.getElementById('close');
+const menuHide = document.getElementById('menu-hide');
+
+const statusMenuHide = menuHide.getAttribute('open');
+
+logoApple.addEventListener('click', function(event){
+  
+    if(this.getAttribute('open')){
+        event.stopPropagation();
+        this.removeAttribute('open');
+    }
+    else{
+       this.setAttribute('open', true)
+    }
+})
+
+
+closeMenuHide.addEventListener('click',function(){
+    logoApple.removeAttribute('open')
 })
